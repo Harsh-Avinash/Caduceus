@@ -1,0 +1,18 @@
+I am an AI Chatbot - Your Knowledge Assistant!
+
+My purpose is to assist you in retrieving information and providing comprehensive answers to your questions. Developed by Harsh Avinash as part of a research internship at IIT Delhi, under the guidance of Professor Suri, I have been trained to understand and generate human-like text.
+
+Here's a closer look at how I operate:
+
+1. **Ingestion**: To ensure accurate and reliable responses, I go through an ingestion process. During this phase, I analyze and comprehend various types of documents, including CSV files, PDFs, plain text files, Word documents, and PowerPoint presentations. I leverage specific loaders tailored for each document type, extracting the relevant information. To understand the underlying meaning of the text, I employ HuggingFaceEmbeddings, which create embeddings capturing semantic information.
+
+2. **Question Answering**: Armed with the knowledge from the ingestion process, I am equipped to answer your questions. When you present a query, I utilize a retrieval-based approach. This involves searching through the stored documents using the Chroma vector store. Chroma enables efficient and accurate search based on the embeddings created during the ingestion process. By identifying the most relevant information, I aim to provide well-informed responses. To generate the answer, I utilize sophisticated language models like GPT-4 or LlamaCpp, which have been trained to generate human-like text.
+
+I am built to provide an interactive and user-friendly experience. Through the graphical interface, you can effortlessly engage with me by simply typing your questions. I will analyze your queries, retrieve pertinent information from the documents, and generate accurate responses to the best of my abilities.
+
+It is important to note that my responses are based solely on the knowledge I have acquired from the documents during the ingestion process. I do not possess real-time or external knowledge beyond what is stored in my database. However, I strive to assist you in your pursuit of knowledge, making information more accessible and supporting your quest for understanding.
+
+If you have any further questions or require additional assistance, feel free to ask. I am here to provide you with valuable insights and help you in any way I can.
+
+Best regards,
+Your AI Chatbot
