@@ -68,9 +68,10 @@ def main():
     db = Chroma(persist_directory=persist_directory,
                 embedding_function=embeddings, client_settings=CHROMA_SETTINGS)
     retriever = db.as_retriever(search_kwargs={"k": target_source_chunks})
-    callbacks = [StreamingStdOutCallbackHandler()]
-    llm = GPT4All(model=model_path, n_ctx=model_n_ctx, backend='gptj',
-                  n_batch=model_n_batch, callbacks=callbacks, verbose=False)
+    # callbacks = [StreamingStdOutCallbackHandler()]
+    callbacks = []
+    llm = GPT4All(model=model_path, n_ctx=model_n_ctx, backend='ggml',
+                  n_batch=model_n_batch, callbacks=callbacks, verbose=False)  # type: ignore
 
     qa = RetrievalQA.from_chain_type(
         llm=llm, chain_type="stuff", retriever=retriever, return_source_documents=True)
