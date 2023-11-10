@@ -1,3 +1,5 @@
 models/
 Caduceus/
 testing/
+.vscode/
+_pycache_
