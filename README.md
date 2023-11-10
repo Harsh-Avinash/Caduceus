@@ -21,12 +21,42 @@ Caduceus revolutionizes the way we interact with Large Language Models (LLMs) by
 
 This tool is especially beneficial for professionals who often work in environments with limited or no internet connectivity. Educators, researchers, and business professionals will find it particularly useful for accessing AI-powered insights and assistance on-the-go.
 
-## Installation and Usage
+## Step-by-Step Installation
 
-1. **Install WinPy on USB Drive:** Begin by setting up WinPy on your USB drive.
-2. **Download LLM Model:** Fetch the desired LLM model from [gpt4all.io](https://gpt4all.io/index.html) and place it in the designated folder on the drive.
-3. **Initial Program Run:** Execute the program to ensure all components are properly installed and configured.
-4. **Prepare the Pendrive:** Use the provided script to set up the drive with the LLM, making it ready for use.
+1. **Clone the Repository:**
+   Open your command prompt or terminal and enter the following command to clone the Caduceus repository:
+
+   ```
+   git clone https://github.com/Harsh-Avinash/Caduceus.git
+   ```
+
+   This command copies the Caduceus project files onto your local machine.
+
+2. **Navigate to the Caduceus Directory:**
+   Change your directory to the Caduceus folder that was created from the cloning process:
+
+   ```
+   cd Caduceus
+   ```
+
+3. **Run the Setup Script:**
+   To set up Caduceus on your machine, execute the `setup.py` script:
+
+   ```
+   python setup.py
+   ```
+
+   This script will install necessary dependencies and configure the software for your USB drive.
+
+## What to Expect Next
+
+- **Completion of Setup:** The `setup.py` script will guide you through the process of installing Caduceus on your USB drive.
+- **Initial Configuration:** You may be prompted to specify certain preferences or settings during the setup.
+- **Downloading LLM Model:** Currently a simple small detfault (quantized) model will be downloaded.
+
+## Post-Installation
+
+After successfully running the setup script, your Caduceus software is ready to use. Simply plug in the USB drive into any Windows machine to start interacting with the LLM offline.
 
 ## Design Insights
 
