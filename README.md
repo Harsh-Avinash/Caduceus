@@ -66,7 +66,7 @@ After successfully running the setup script, your Caduceus software is ready to 
 ## Limitations
 
 - **Platform Specificity:** Currently available only for Windows users.
-- **Hardware Dependence:** Requires atleast a 16gb pendrive for instalation
+- **Hardware Dependence:** Requires atleast a 16gb pendrive for installation
 - **Model Compatibility:** Potential limitations due to the size and compatibility of the LLM with the USB drive hardware.
 
 Caduceus offers a unique blend of portability, privacy, and accessibility, making advanced AI interactions available anywhere, anytime.
